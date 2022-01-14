@@ -1,0 +1,24 @@
+{
+  "name": "send-mail-express",
+  "version": "1.0.0",
+  "description": "mail sender",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.test.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "send-mail-express"
+  },
+  "author": "Arthur Nindaba",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "nodemailer": "^6.7.2"
+  },
+  "devDependencies": {
+    "express-reload": "^1.2.0"
+  }
+}
