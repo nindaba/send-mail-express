@@ -1,4 +1,4 @@
-FROM nodejs:14.17.6
+FROM node:14.17.6
 COPY . .
 WORKDIR ./
 EXPOSE 3000
