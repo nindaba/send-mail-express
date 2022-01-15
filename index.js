@@ -29,12 +29,11 @@ const send = (mail ={
     to: "arthurninda@gmail.com", // list of receivers
     subject: "Portfolio", // Subject line
     html: `<b>${mail.message}</b>` // html body
-})
-.then(logger)
-.catch(logger);
+});
 
 
 App.post("/send",(request,response)=>{
-    send(request.body);
-    response.send("OK");
+    send(request.body)
+    .then(()=>response.send({Mail: 'sent successfuly'}))
+    .catch(()=>response.send({Mail: 'not sent'}));
 });
