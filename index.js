@@ -16,8 +16,8 @@ const transport = Mail.createTransport({
     port: 2525,
     secure: false, 
     auth: {
-        user: "arthurninda@gmail.com",
-        pass: "EEDD27EEB4E30BC7A941F5E931FE1507D779",
+        user: "YOUR_EMAIL",
+        pass: "YOUR_PASS",
     } 
 });
 const send = (mail ={
